@@ -1,0 +1,12 @@
+
+* {
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; 
+}
+
+html, body {
+    margin: 0;
+}
