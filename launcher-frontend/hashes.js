@@ -1439,6 +1439,6 @@ var FILE_HASHES = {
 "\\versions\\OptiFine 1.10.2\\natives\\lwjgl.dll": "2644c73a80eb9f9fb7f81a2a5e546642",
 "\\versions\\OptiFine 1.10.2\\natives\\lwjgl64.dll": "0b9fcfbd6d44e4d83605cc35171668c8",
 "\\versions\\OptiFine 1.10.2\\natives\\OpenAL32.dll": "9e02334f9bba622885eadb059f0633b3",
-"\\versions\\OptiFine 1.10.2\\natives\\OpenAL64.dll": "89021c218a3f6feb807a664f852ffbd3"
+"\\versions\\OptiFine 1.10.2\\natives\\OpenAL64.dll": "89021c218a3f6feb807a664f852ffbd3",
+"\\servers.dat": null
 };
-

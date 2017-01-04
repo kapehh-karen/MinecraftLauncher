@@ -65,8 +65,16 @@ public class JavaScriptWrapper {
         FileSystemUtil.mkdirs(folderName);
     }
 
-    public void runProcess(String arguments) {
-        System.out.println("Run process: " + arguments);
+    public void runProcess(String command) {
+        try {
+            Process myProcess = Runtime.getRuntime().exec(command);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void exit() {
+        Main.main_stage.close();
     }
 
     public void info(String title, String header, String content) {

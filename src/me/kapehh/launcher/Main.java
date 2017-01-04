@@ -14,14 +14,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class Main extends Application {
+    public static Stage main_stage = null;
     public static Image icon = null;
 
     static {
-        try {
-            icon = new Image(new FileInputStream("minecraft-icon.png"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        icon = new Image(Main.class.getResourceAsStream("/minecraft-icon.png"));
     }
 
     public static void main(String[] args) {
@@ -30,9 +27,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        main_stage = stage;
+
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        //webView.setContextMenuEnabled(false);
+        webView.setContextMenuEnabled(false);
         webEngine.getLoadWorker().stateProperty().addListener(
                 (ObservableValue<? extends State> ov, State oldState, State newState) -> {
                     if (newState == State.SUCCEEDED) {
