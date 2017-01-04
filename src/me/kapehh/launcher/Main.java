@@ -39,7 +39,7 @@ public class Main extends Application {
                         win.setMember("java", new JavaScriptWrapper());
                     }
                 });
-        webEngine.load("http://localhost/kph/launcher-frontend");
+        webEngine.load("http://kph.c-factory2.pw/kph/launcher-frontend");
 
         Scene scene = new Scene(webView);
         stage.getIcons().clear();
