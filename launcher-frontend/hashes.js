@@ -253,10 +253,6 @@ var DIR_LIST = [
 "\\assets\\objects\\fd",
 "\\assets\\objects\\fe",
 "\\assets\\objects\\ff",
-"\\assets\\skins\\a1",
-"\\assets\\skins\\ee",
-"\\assets\\skins\\ke",
-"\\assets\\skins\\No",
 "\\libraries\\com\\google\\code\\gson\\gson\\2.2.4",
 "\\libraries\\com\\google\\guava\\guava\\17.0",
 "\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2",
@@ -300,8 +296,6 @@ var DIR_LIST = [
 ];
 
 var FILE_HASHES = {
-"\\options.txt": "a38cbf4195f3c201c0e43dc58f68557c",
-"\\servers.dat": "2464d17265357925afe330047b385131",
 "\\assets\\indexes\\1.10.json": "0ec03d723507009c98ff08736f0517b5",
 "\\assets\\indexes\\legacy.json": "73e8c1d4445b71a97dad6161b47b242e",
 "\\assets\\objects\\00\\000c82756fd54e40cb236199f2b479629d0aca2f": "aec6659b07864419de2533158c8ccf1f",
@@ -1401,10 +1395,6 @@ var FILE_HASHES = {
 "\\assets\\objects\\fe\\fef5251190146ab8e0abe80183cd78c243d7c6fe": "d0d5161a4d28c30b70044c44a92c4e3c",
 "\\assets\\objects\\fe\\fef8520e0d345fdc7c270687c8e4fca62be36c76": "3eaef251ce5f104b35e77138773b1d28",
 "\\assets\\objects\\ff\\ffab7afcd8d98533402f2e7f0b757a9d9502ee5f": "f48bee62cf213aad23b29e5898de78e9",
-"\\assets\\skins\\a1\\a116e69a845e227f7ca1fdde8c357c8c821ebd4ba619382ea4a1f87d4ae94": "2041a4dc31f673cf32ca944f6ef460fc",
-"\\assets\\skins\\ee\\eec3cabfaeed5dafe61c6546297e853a547c39ec238d7c44bf4eb4a49dc1f2c0": "7814c9c5fad21303fbc5c08c63920a41",
-"\\assets\\skins\\ke\\kek": "4871b8be77ab7f91458d8b8773281eb4",
-"\\assets\\skins\\No\\Notch": "4871b8be77ab7f91458d8b8773281eb4",
 "\\libraries\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar": "2f54fc24807a4cad7297012dd8cebf3d",
 "\\libraries\\com\\google\\guava\\guava\\17.0\\guava-17.0.jar": "89fef81c2adfa9b50a64ed5cd5d8c155",
 "\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2\\icu4j-core-mojang-51.2.jar": "aec124acf7b3c1c6ed41a6270a4452b8",

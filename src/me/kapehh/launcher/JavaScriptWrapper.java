@@ -62,4 +62,8 @@ public class JavaScriptWrapper {
     public void print(Object object) {
         System.out.println(object);
     }
+
+    public void sleep(int millis) throws InterruptedException {
+        Thread.sleep(millis);
+    }
 }
