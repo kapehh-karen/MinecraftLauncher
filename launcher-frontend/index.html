@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <title>C-Factory</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Mono&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!!!</h1>
-    <button onclick="button_test()">TEST</button>
+    <div id="auth" class="section" style="display: block">
+        <div class="content">
+            <h1 class="header">[Ц]-Factory 2</h1>
+            <h3 class="header">Добро пожаловать!</h3>
+            <div class="field">
+                <label class="white">Имя пользователя: <input id="username" type="text" name="username"></label>
+            </div>
+            <div class="field">
+                <label class="white">Пароль: <input id="password" type="password" name="password"></label>
+            </div>
+            <div class="commands">
+                <button onclick="button_login()">Вход</button>
+                <button onclick="button_register()">Регистрация</button>
+            </div>
+        </div>
+    </div>
+    <div id="run" class="section" style="display: none">
+        <div id="run_content" class="content">
+            Запуск...
+        </div>
+    </div>
+    <div class="footer">
+        Minecraft 1.10 / Launcher by 0xF00D
+    </div>
     <script src="hashes.js"></script>
     <script src="script.js"></script>
 </body>

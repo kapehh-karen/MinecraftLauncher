@@ -4,13 +4,13 @@ import javafx.scene.control.Alert;
 import me.kapehh.launcher.utils.AlertUtil;
 import me.kapehh.launcher.utils.FileSystemUtil;
 import me.kapehh.launcher.utils.HashUtil;
+import me.kapehh.launcher.utils.UrlUtil;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.UnsupportedEncodingException;
+import java.net.*;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Path;
@@ -31,12 +31,30 @@ public class JavaScriptWrapper {
         return Paths.get(firstPath, secondPath).toString();
     }
 
-    public void downloadFile(String url, String file) throws IOException {
-        FileSystemUtil.downloadFile(url, file);
+    public String concatenateURL(String url, String extra) {
+        try {
+            return new URI(UrlUtil.prepareUrl(url)).resolve(UrlUtil.prepareUrl(extra)).toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 
-    public String calculateHash(String filename) throws NoSuchAlgorithmException, IOException, URISyntaxException {
-        return HashUtil.calculateFileHash(filename, "md5");
+    public void downloadFile(String url, String file) {
+        try {
+            FileSystemUtil.downloadFile(url, file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String calculateHash(String filename) {
+        try {
+            return HashUtil.calculateFileHash(filename, "md5");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 
     public boolean fileExists(String filename) {
