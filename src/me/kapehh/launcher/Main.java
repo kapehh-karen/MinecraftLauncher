@@ -29,6 +29,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         main_stage = stage;
 
+        JavaScriptWrapper java = new JavaScriptWrapper();
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
         webView.setContextMenuEnabled(false);
@@ -36,9 +37,12 @@ public class Main extends Application {
                 (ObservableValue<? extends State> ov, State oldState, State newState) -> {
                     if (newState == State.SUCCEEDED) {
                         JSObject win = (JSObject) webEngine.executeScript("window");
-                        win.setMember("java", new JavaScriptWrapper());
+                        win.setMember("java", java);
                     }
                 });
+        webEngine.setOnAlert(event -> {
+            java.info("Alert", null, event.getData());
+        });
         webEngine.load("http://kph.c-factory2.pw/kph/launcher-frontend");
 
         Scene scene = new Scene(webView);

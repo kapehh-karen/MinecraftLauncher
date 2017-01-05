@@ -1398,7 +1398,7 @@ var FILE_HASHES = {
 "\\libraries\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar": "2f54fc24807a4cad7297012dd8cebf3d",
 "\\libraries\\com\\google\\guava\\guava\\17.0\\guava-17.0.jar": "89fef81c2adfa9b50a64ed5cd5d8c155",
 "\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2\\icu4j-core-mojang-51.2.jar": "aec124acf7b3c1c6ed41a6270a4452b8",
-"\\libraries\\com\\mojang\\authlib\\1.5.22\\authlib-1.5.22.jar": "f8882edcfafd975525441bb918258546",
+"\\libraries\\com\\mojang\\authlib\\1.5.22\\authlib-1.5.22.jar": "321e1bb9c5c9e7746b4d9c86ff8d4706",
 "\\libraries\\com\\mojang\\netty\\1.6\\netty-1.6.jar": "00c937b7ae6131e12fb4c4faaea05368",
 "\\libraries\\com\\mojang\\realms\\1.9.8\\realms-1.9.8.jar": "a243ea660ba2ff1cbfb273566d7765d3",
 "\\libraries\\com\\paulscode\\codecjorbis\\20101023\\codecjorbis-20101023.jar": "0d622e2ac4368b5a33d540a9e4819e0c",

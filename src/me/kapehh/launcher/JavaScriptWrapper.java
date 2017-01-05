@@ -68,7 +68,7 @@ public class JavaScriptWrapper {
     public void runProcess(String command) {
         try {
             Process myProcess = Runtime.getRuntime().exec(command);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
